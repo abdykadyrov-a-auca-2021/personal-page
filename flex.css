@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   }
+   body {
+   background: url("https://cdn.imgchest.com/files/j7kzcbnrz7m.png"); /* replace yellow image web address FuMing emails you */
+   opacity: .5;
+   background-repeat: no-repeat;
+   }
+   .container {
+   max-width: 1400px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-shrink: 0;
+   gap: 0.6em;
+      
+
+}
+   .container > * {
+   background-color: lightblue;
+   font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    flex-grow: 1;  
+    height: 200px;
+    
+    
+}
+.box1 {
+    flex-basis: 160px;
+}
+
+.box2 {
+    flex-basis: 610px;
+    
+}
+
+.box3{
+    flex-basis: 610px;
+}
+.box4{
+    flex-basis: 1195px;
+}
+.box5{
+    flex-basis: 195px ;
+}
+.box6{
+    flex-basis: 100%;
+}
