@@ -48,13 +48,13 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: 40px 170px 34px 388px 383px;
+    grid-template-rows: 40px 170px 32px 388px 383px;
     grid-template-areas: 
     "one two two"
     "three two two" 
     "four six seven"
     "five five five";
-    grid-template-columns: 237px 681px 238px;
+    grid-template-columns: 237px 690px 238px;
 
     
     grid-template-columns:
