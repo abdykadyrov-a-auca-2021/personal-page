@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-rows: 40px 170px 32px 388px 383px;
     grid-template-areas: 
-    "one two two"
+    "one one one"
     "three two two" 
     "four six seven"
     "five five five";
@@ -108,25 +108,6 @@ body {
 }
 .Menu>:not(:nth-child(1)){
     background-color: white;
-}
-
-.Menu>li:nth-child(2){
-
-}
-
-.Menu>li:nth-child(3){
-    
-}
-
-.Menu>li:nth-child(4){
-  
-}
-
-.Menu>li:nth-child(5){
-    
-}
-.Menu>li:nth-child(6){
-    
 }
 
 img:nth-of-type(1) {
