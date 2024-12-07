@@ -413,3 +413,88 @@ span.fa-camera{
     font-size: 18px;
     padding:2px 0px 0px 7px;
 }
+
+.box5{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.box5title{
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-basis: 60px;
+    font-size: 26px;
+    padding: 12px 8px 0px 0px;
+    word-spacing: 4px;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+}
+
+.reccomendboxes{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-basis: 303px;
+    width: 448px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+.reccomendboxes > *{
+    border: whitesmoke 2px solid;
+}
+
+
+.item {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+.item-image {
+    width: 200px;
+    height: 200px;
+}
+.discount {
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    background-color: #ff7043;
+    color: #fff;
+    padding: 7px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+}
+
+.description p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.pricing {
+    font-size: 16px;
+
+}
+
+.old-price {
+    text-decoration: line-through;
+    color : #999;
+    padding: 6px 10px 0px 0px;
+    letter-spacing:-1px;
+}
+
+.new-price {
+    color : #ff7043;
+    margin-left: -8px;
+    font-size: 20px;
+    font-weight: bold;
+}
