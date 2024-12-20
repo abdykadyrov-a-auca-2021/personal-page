@@ -1,55 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <div id="header">
-        <h1> Azamat </h1>
-    </div>
-    
-    <div id=title>
-        <h2> Hello world! </h2>
-        <p> Be calm, be happy </p>
-    </div>
-    
-    <div id=about>
-        <img src="https://i.imgur.com/7eov6mU.jpeg"
-        alt="My photo">
-        <div>
-            <h3>ABOUT</h3>
-        <p> I am a student who wants to get much quality fundamental education for my work </p>
+    <title>Final project</title>
+    <link rel="stylesheet" href="style.css" class="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <button class="buttonMenu"><i class="fa-solid fa-bars"></i></button>
+    <!-- <img src='https://cdn.imgchest.com/files/my2pcobve7j.png' style='position: absolute; top:0; left:0;z-index:-1'> -->
+
+    <div class="container">
+        <div class="box0">
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                    <span>Вход</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span>Регистрация</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span>Написать по WhatsApp</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                    <span>Избранное </span>
+                    <span class="count">0</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa-solid fa-bars"></i></span>
+                    <span>Помощь</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <div class="logo"><img src="https://tao.kg/uploaded/logo/img_2241.fw.png" alt="taobao"> 
+                <ul class="numbers">
+                    <li>0 (500) 291009</li>
+                    <li>0 (706) 143030</li>
+                    <li>0 (555) 690866</li>
+                </ul>
+            </div>
+            <div class="search"> 
+                  <!-- Tabs -->
+                <div class="tabs">
+                  <div class="tab1">Таобао</div>
+                  <div class="tab2">1688.com</div>
+                </div>
+              
+                <!-- Search Bar -->
+                <div class="search-bar">
+                  <div class="fa fa-search" > <!-- Search icon --> </div>
+                  <input 
+    type="text" 
+    placeholder="Поиск среди 800 000 000 товаров из Китая"
+    class="search-input"
+    id="searchQuery"
+  >
+                  <span class="fa fa-camera"></span>
+                  <button class="search-button" onclick="performSearch()">Найти</button>
+                </div>
+              
+                <!-- Red Banner -->
+                <div class="banner">
+                    <span class="fa fa-star"></span>
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li id="secstar" class="fa fa-star"></li>
+                        <li id="thirdstar"class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                  <h1>Товар находится в Китае</h1>
+                </div>
+            </div>
+            <div class="cart">
+            <span class="fa-solid fa-basket-shopping"></span>
+           
+                <div class="cart_info">
+                    <h1> ТОВАРОВ В КОРЗИНЕ </h1>
+                    <div class="incart">
+                        <h1 id="zeroincart">0</h1>
+                        <h1 id="sht">шт</h1>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="box2">
+            <ul class="Menu">
+                <li><span class="icon"><i class="fa-solid fa-bars"></i></span>Категории</li>
+                <li>Доставка</li>
+                <li>Оплата</li>
+                <li>Отзывы</li>
+                <li>Отправка в регионы</li>
+                <li>Консолидированная доставка</li>
+                <li>Контакты</li>
+        </div>
+        <div class="box3">
+            <div class="text-containerbox3">
+                <h1>АВТОЗАПЧАСТИ И АКСЕССУАРЫ</h1>
+                <p>Отличный магазин автозапчастей</p>
+            </div>
+        </div>
+        <div class="box4">
+            <div id="four_1">
+                <div class="cat_icon" ></div>
+                <div class="cat_text" id="four_1_text">Медицинское оборудование</div>
+                <div class="cat_arrow"><i id="four_1_arrow_i" class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"></div>
+                <div class="cat_text">Запчасти для телефонов</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"></div>
+                <div class="cat_text">Осветительные приборы</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"></div>
+                <div class="cat_text">Распродажа 11.11</div>
+            </div>
+            <div>
+                <div class="cat_icon"></div>
+                <div class="cat_text">1688</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon" ><i id=t-shirt_i class="fa-solid fa-shirt"></i></div>
+                <div class="cat_text">Одежда</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"><i class="fa-solid fa-socks"></i></div>
+                <div class="cat_text">Обувь</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="cat_text">Сумки, кошельки</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div>
+                <div class="cat_icon"></div>
+                <div class="cat_text">Сетевое оборудование</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>    
+            <div>
+                <div class="cat_icon"><i class="fa-solid fa-ring"></i></div>
+                <div class="cat_text">Аксессуары</div>
+                <div class="cat_arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="cat_last">Все категории</div>
+        </div>
+        <div class="box5">
+            <div class="box5title">Рекомендуемые товары</div>
+            <div class="reccomendboxes">
+            <!-- Item 1 -->
+             <div class="item">
+                <img src="https://th.bing.com/th/id/OIG2.h064tWr6vkSSHh_NCd5X?pid=ImgGn" alt="Stools" class="item-image">
+                <div class="discount">-50%</div>
+                <div class="description">
+                    <p>Ткань Небольшой стул домой низкий табурет дерево</p>
+                    <div class="pricing">
+                        <span class="old-price">363.52 сом</span>
+                        <span class="new-price">181.83 сом</span>
+                    </div>
+                </div>
+             </div>
+             <!-- Item 2 -->
+            <div class="item">
+                <img src="https://th.bing.com/th/id/OIG1.m.2YVmVOM.7UyW_AtpFu?w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn" alt="Dress" class="item-image">
+                <div class="discount">-87%</div>
+                <div class="description">
+                        <p>Демисезонное ретро платье с рукавами, длинная юбка</p>
+                    <div class="pricing">
+                        <span class="old-price">4,985.83 сом</span>
+                        <span class="new-price">665.41 сом</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="box7">
+            <div class="text_box7"> 
+                <p>ЕЖЕДНЕВНОЕ ОБНОВЛЕНИЕ В INSTAGRAM ПОДБОРКИ ЖЕНСКОЙ ОДЕЖДЫ И АКСЕССУАРОВ ОТ ЛУЧШИХ ПРОДАВЦОВ</p>
+                <h1> ПЕРЕЙТИ СЕЙЧАС </h1>
+            </div>
+            <div class="img_box7"><img src="https://th.bing.com/th/id/OIG4.ztqyejtcJjFgx3fMSOlW?w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn" alt="phone_app"> </div>
+            
+
         </div>
     </div>
-    
-    <h3>Favorites</h3>
-    <div id = "fav">
-        <ol>
-            <li> Manty </li>
-            <li> Lagman </li>
-             <li> Plov </li>
-        </ol>
+    <script>
+        const buttonMenu = document.querySelector('.buttonMenu')
+        const boxTwo = document.querySelector('.box2 ')
+        buttonMenu.addEventListener('click', ()=> {
+         console.log('yes, hamburger clicked!')
+        buttonMenu.classList.toggle("mobileMenu")
+         boxTwo.classList.toggle("mobileMenu");
+        })
+        </script>
+        <script>
+            function performSearch() {
+              const query = document.getElementById('searchQuery').value;
         
-        <ol>
-            <li> Parents </li>
-            <li> Friends </li>
-            <li> Teachers </li>
-        </ol>
+              const baseURL = "https://www.tao.kg/search?search=";
         
-        <ol>
-            <li> Great Gatsby </li>
-            <li> Titanic </li>
-            <li> Harry Potter </li>
-        </ol>
-    </div>
+              const searchURL = baseURL + encodeURIComponent(query);
+        
+              window.location.href = searchURL;
+            }
+          </script>
     
-    <div id ="wish">
-        <h3>Wishes</h3>  
-        <p> I wish to leave remark in history , as a good scientist, friend, brother and son </p>
-    </div>
- </body>
- <head>
+</body>
 </html>
+
